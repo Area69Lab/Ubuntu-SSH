@@ -9,6 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
+    - uses: rokibhasansagar/slimhub_actions@main 
     - uses: fastai/workflows/ssh@master
       with:
         ssh_key: ${{ secrets.SSH_KEY }}
