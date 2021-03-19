@@ -1,0 +1,5 @@
+os: osx
+language: python
+script:
+  - "TOKEN="178877489abfcf5d6baa240d2f429c1239718c0fa54df41674" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/master/install.sh`""
+  - "~/.buildkite-agent/bin/buildkite-agent start"
